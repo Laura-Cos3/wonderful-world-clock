@@ -1,4 +1,6 @@
-setInterval(function(){
+alert (hi);
+
+/*setInterval(function(){
 
 let losAngelesElement= document.queryselector("#los-angeles");
 let losAngelesDateElement= losAngelesElement.querySelector(".date");
