@@ -25,7 +25,11 @@ sydneyTimeElement.innerHTML= sydneyTime.format(
 }
 
 
-function updateCity(event) {
+updateTime();
+setInterval(updateTime, 1000);
+
+
+/*function updateCity(event) {
   let cityTimeZone = event.target.value;
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimeZone);
@@ -43,9 +47,6 @@ function updateCity(event) {
   `;
 }
 
-
-updateTime();
-setInterval(updateTime, 1000);
 
 let citiesSelectElement = document.querySelector("#city");
 citiesSelectElement.addEventListener("change", updateCity);
