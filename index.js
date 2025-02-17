@@ -1,16 +1,17 @@
-setInterval function(){
+function updateTime() {
 
 let losAngelesElement= document.queryselector("#los-angeles");
+    if (losAngelesElement) { 
 let losAngelesDateElement= losAngelesElement.querySelector(".date");
 let losAngelesTimeElement= losAngelesElement.querySelector(".time");
 let losAngelesTime= moment().tz("America/Los_Angeles);
 
 losAngelesDateElement.innerHTML= losAngelesTime.format("Do MMMM YYYY");
-losAngelesTimeElement.innerHTML= losAngelesTime.format("h:mm:ss" [<small>]A[</small>]") 
+losAngelesTimeElement.innerHTML= losAngelesTime.format("h:mm:ss [<small>]A[</small>]");
     }
 
   
-let sydneyElement= document.queryselector("#sydney");
+/*let sydneyElement= document.queryselector("#sydney");
 if (sydneyElement) {
 let sydneyDateElement= sydneyElement.querySelector(".date");
 let sydneyTimeElement= sydneyElement.querySelector(".time");
