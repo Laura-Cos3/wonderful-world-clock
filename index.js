@@ -22,6 +22,7 @@ sydneyTimeElement.innerHTML= sydneyTime.format(
     "h:mm:ss [<small>]A[</small>]"
 );
 }
+}
 
 function updateCity(event) {
     let cityTimeZone= event.target.vaue;
@@ -45,4 +46,3 @@ setInterval(updateTime, 1000);
     
 let citiesSelectElement= document.querySelector("#city");
 citiesSelectElement.addEventListener("change", updateCity);
-}
