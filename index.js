@@ -7,9 +7,9 @@ let losAngelesTimeElement= losAngelesElement.querySelector(".time");
 let losAngelesTime= moment().tz("America/Los_Angeles");
 
 losAngelesDateElement.innerHTML= losAngelesTime.format("Do MMMM YYYY");
-losAngelesTimeElement.innerHTML= losAngelesTime.format("h:mm:ss [<small>]A[</small>]");
+losAngelesTimeElement.innerHTML= losAngelesTime.format("h:mm:ss [<small>]A[</small>]"
+      );
     }
-
   
 let sydneyElement= document.queryselector("#sydney");
 if (sydneyElement) {
@@ -32,18 +32,16 @@ function updateCity(event) {
     <div class= "city">
     <div>
     <h2>${cityName}<h2>
-    <div class= "date"> ${cityTime.format("MMM  Do YYYY") }</div>
+    <div class= "date"> ${cityTime.format("MMMM Do YYYY")}</div>
     </div>
     <div class= "time">${cityTime.format("h:mm:ss")} <small>${cityTime.format("A")}
     </small></div>
     </div>`;
-
-
-                                                        
-
+}
+                                                    
 
 updateTime();
 setInterval(updateTime, 1000);
     
 let citiesSelectElement= document.querySelector("#city");
-    citiesSelectElement.addEventListener("change", updateCity);
+citiesSelectElement.addEventListener("change", updateCity);
