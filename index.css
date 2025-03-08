@@ -26,7 +26,6 @@ select {
 .container {
   max-width: 600px;
   display:flex;
-  align: center;
   background: white;
   padding: 30px;
   box-shadow:0px 10px 20px 0 rgba(0, 0, 0, 0.4);
